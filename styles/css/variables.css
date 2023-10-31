@@ -1,18 +1,11 @@
-@charset "UTF-8";
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --main-font: 'Inter Variable', sans-serif;
-  --acent-font: 'Press Start', sans-serif;
+  --main-font: "Inter Variable", sans-serif;
+  --acent-font: "Press Start", sans-serif;
   --main-title-size: clamp(2.75rem, 2.2879rem + 1.9718vw, 4.0625rem);
   --title-size: clamp(1.125rem, 1.015rem + 0.4695vw, 1.4375rem);
-  --font-weight: 400;
-  --background-gradient: repeating-linear-gradient(
-      to left,
-      #d3d3d3,
-      rgb(0 0 0 / 0) 2px
-    ),
-    repeating-linear-gradient(to top, #d3d3d3, rgb(0 0 0 / 0) 2px),
-    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  --font-stngs: "wght" 400;
+  --background-gradient: repeating-linear-gradient(to left, #d3d3d3, rgb(0 0 0 / 0) 2px), repeating-linear-gradient(to top, #d3d3d3, rgb(0 0 0 / 0) 2px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
   --main-color: #fff;
   --acent-color: #000;
   --hover-text-color: #fff;

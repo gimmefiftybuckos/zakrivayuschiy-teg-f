@@ -1,12 +1,6 @@
 :root.theme-light {
-  --font-weight: 400;
-  --background-gradient: repeating-linear-gradient(
-      to left,
-      #d3d3d3,
-      rgb(0 0 0 / 0) 2px
-    ),
-    repeating-linear-gradient(to top, #d3d3d3, rgb(0 0 0 / 0) 2px),
-    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  --font-stngs: 400;
+  --background-gradient: repeating-linear-gradient(to left, #d3d3d3, rgb(0 0 0 / 0) 2px), repeating-linear-gradient(to top, #d3d3d3, rgb(0 0 0 / 0) 2px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
   --main-color: #fff;
   --acent-color: #000;
   --hover-text-color: #fff;
@@ -15,15 +9,10 @@
 }
 
 @media (prefers-color-scheme: light) {
+  
   .theme-auto {
-    --font-weight: 400;
-    --background-gradient: repeating-linear-gradient(
-        to left,
-        #d3d3d3,
-        rgb(0 0 0 / 0) 2px
-      ),
-      repeating-linear-gradient(to top, #d3d3d3, rgb(0 0 0 / 0) 2px),
-      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+    --font-stngs: 400;
+    --background-gradient: repeating-linear-gradient(to left, #d3d3d3, rgb(0 0 0 / 0) 2px), repeating-linear-gradient(to top, #d3d3d3, rgb(0 0 0 / 0) 2px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
     --main-color: #fff;
     --acent-color: #000;
     --hover-text-color: #fff;
@@ -31,36 +20,26 @@
     --img-filter: invert(0);
   }
 }
+
 :root.theme-dark {
-  --font-weight: 465;
-  --background-gradient: repeating-linear-gradient(
-      to left,
-      #000,
-      rgb(0 0 0 / 0) 2px
-    ),
-    repeating-linear-gradient(to top, #000, rgb(0 0 0 / 0) 2px),
-    linear-gradient(to bottom, #007f0c, #004306 100%);
+  --font-stngs: 465;
+  --background-gradient: repeating-linear-gradient(to left, #000, rgb(0 0 0 / 0) 2px), repeating-linear-gradient(to top, #000, rgb(0 0 0 / 0) 2px), linear-gradient(to bottom, #007f0c, #004306 100%);
   --main-color: #000;
-  --acent-color: #00cc14;
-  --hover-text-color: #00cc14;
-  --contour-color: #00cc14;
+  --acent-color: #00CC14;
+  --hover-text-color: #00CC14;
+  --contour-color: #00CC14;
   --img-filter: invert(1);
 }
 
 @media (prefers-color-scheme: dark) {
+
   .theme-auto {
-    --font-weight: 465;
-    --background-gradient: repeating-linear-gradient(
-        to left,
-        #000,
-        rgb(0 0 0 / 0) 2px
-      ),
-      repeating-linear-gradient(to top, #000, rgb(0 0 0 / 0) 2px),
-      linear-gradient(to bottom, #007f0c, #004306 100%);
+    --font-stngs: 465;
+    --background-gradient: repeating-linear-gradient(to left, #000, rgb(0 0 0 / 0) 2px), repeating-linear-gradient(to top, #000, rgb(0 0 0 / 0) 2px), linear-gradient(to bottom, #007f0c, #004306 100%);
     --main-color: #000;
-    --acent-color: #00cc14;
-    --hover-text-color: #00cc14;
-    --contour-color: #00cc14;
+    --acent-color: #00CC14;
+    --hover-text-color: #00CC14;
+    --contour-color: #00CC14;
     --img-filter: invert(1);
   }
 }

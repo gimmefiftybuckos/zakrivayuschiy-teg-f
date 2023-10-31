@@ -2,7 +2,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font);
-  font-weight: var(--font-weight);
+  font-variation-settings: var(--font-stngs);
   background-image: var(--background-gradient);
   background-attachment: fixed;
   background-size: cover;
@@ -70,7 +70,7 @@
 }
 
 .theme-menu__button:disabled::before {
-  content: '▶';
+  content: "▶";
   position: absolute;
   inset-inline-start: -15px;
   inset-block-start: 0;
@@ -108,7 +108,6 @@
   font-family: var(--acent-font);
   font-size: 14px;
   color: var(--acent-color);
-  -webkit-text-stroke: 1px var(--main-color);
   text-shadow: 1px var(--main-color);
   mix-blend-mode: hard-light;
   opacity: 0.5;
@@ -116,8 +115,8 @@
 
 .card__image {
   display: block;
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   object-fit: cover;
 }
 
@@ -169,8 +168,7 @@
   gap: 5px;
 }
 
-.card__icon-button,
-.card__like-button {
+.card__icon-button, .card__like-button {
   background: none;
   border: none;
 }
@@ -181,6 +179,15 @@
 
 .card__icon-button {
   margin-block-start: 2px;
+}
+
+@supports (text-stroke: 1px var(--main-color)) or (-webkit-text-stroke: 1px var(--main-color)) {
+  
+  .card__label {
+    -webkit-text-stroke: 1px var(--main-color);
+    text-stroke: 1px var(--main-color);
+    text-shadow: none;
+  }
 }
 
 .button {
@@ -207,13 +214,13 @@
 .footer__floppy {
   position: relative;
   z-index: 1;
-  width: 21px;
-  height: 21px;
+  inline-size: 21px;
+  block-size: 21px;
 }
 
 .floppy-svg {
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .save-button {
@@ -260,8 +267,8 @@
 }
 
 .dialog__floppy {
-  width: 39px;
-  height: 39px;
+  inline-size: 39px;
+  block-size: 39px;
 }
 
 .dialog__button {
@@ -269,7 +276,7 @@
 }
 
 @media (width <= 375px) {
-  
+
   .main-title {
     --main-title-size: clamp(2.0625rem, -1.9375rem + 20vw, 2.75rem);
   }
@@ -280,8 +287,8 @@
   }
 
   .footer__floppy {
-    width: 28px;
-    height: 28px;
+    inline-size: 28px;
+    block-size: 28px;
   }
   
   .save-button {
