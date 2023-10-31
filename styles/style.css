@@ -91,7 +91,7 @@
 }
 
 .card__title {
-  font-variation-settings: 'wght' 700;
+  font-variation-settings: var(--title-font-stngs);
   font-size: 18px;
   margin-block: 4px;
   margin-inline-start: 10.5px;

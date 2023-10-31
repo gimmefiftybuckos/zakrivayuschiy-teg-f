@@ -1,5 +1,6 @@
 :root.theme-light {
-  --font-stngs: 400;
+  --font-stngs: 'wght' 400;
+  --title-font-stngs: 'wght' 700;
   --background-gradient: repeating-linear-gradient(to left, #d3d3d3, rgb(0 0 0 / 0) 2px), repeating-linear-gradient(to top, #d3d3d3, rgb(0 0 0 / 0) 2px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
   --main-color: #fff;
   --acent-color: #000;
@@ -11,7 +12,8 @@
 @media (prefers-color-scheme: light) {
   
   .theme-auto {
-    --font-stngs: 400;
+    --font-stngs: 'wght' 400;
+    --title-font-stngs: 'wght' 700;
     --background-gradient: repeating-linear-gradient(to left, #d3d3d3, rgb(0 0 0 / 0) 2px), repeating-linear-gradient(to top, #d3d3d3, rgb(0 0 0 / 0) 2px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
     --main-color: #fff;
     --acent-color: #000;
@@ -22,7 +24,8 @@
 }
 
 :root.theme-dark {
-  --font-stngs: 465;
+  --font-stngs: 'wght' 465;
+  --title-font-stngs: 'wght' 785;
   --background-gradient: repeating-linear-gradient(to left, #000, rgb(0 0 0 / 0) 2px), repeating-linear-gradient(to top, #000, rgb(0 0 0 / 0) 2px), linear-gradient(to bottom, #007f0c, #004306 100%);
   --main-color: #000;
   --acent-color: #00CC14;
@@ -34,7 +37,8 @@
 @media (prefers-color-scheme: dark) {
 
   .theme-auto {
-    --font-stngs: 465;
+    --font-stngs: 'wght' 465;
+    --title-font-stngs: 'wght' 785;
     --background-gradient: repeating-linear-gradient(to left, #000, rgb(0 0 0 / 0) 2px), repeating-linear-gradient(to top, #000, rgb(0 0 0 / 0) 2px), linear-gradient(to bottom, #007f0c, #004306 100%);
     --main-color: #000;
     --acent-color: #00CC14;
