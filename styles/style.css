@@ -1,5 +1,4 @@
 .page {
-  min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font);
   font-variation-settings: var(--font-stngs);
@@ -24,8 +23,10 @@
 }
 
 .main-title {
+  display: inline-block;
   margin-block-start: 111px;
   font-size: var(--main-title-size);
+  text-decoration: none;
 }
 
 .title {
@@ -90,6 +91,8 @@
 }
 
 .card__title {
+  font-variation-settings: 'wght' 700;
+  font-size: 18px;
   margin-block: 4px;
   margin-inline-start: 10.5px;
   word-spacing: -1.1px;
@@ -146,6 +149,10 @@
 
 .card__image_brightness {
   filter: brightness(3) var(--img-filter);
+}
+
+.card__image_sepia {
+  filter: sepia(0.25) var(--img-filter);
 }
 
 .card__description-container {
@@ -216,6 +223,9 @@
   z-index: 1;
   inline-size: 21px;
   block-size: 21px;
+  fill: var(--acent-color);
+  color: var(--hover-text-color);
+  mix-blend-mode: difference;
 }
 
 .floppy-svg {
@@ -269,6 +279,9 @@
 .dialog__floppy {
   inline-size: 39px;
   block-size: 39px;
+  fill: var(--acent-color);
+  color: var(--hover-text-color);
+  mix-blend-mode: difference;
 }
 
 .dialog__button {
