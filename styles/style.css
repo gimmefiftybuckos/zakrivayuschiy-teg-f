@@ -15,7 +15,7 @@
 }
 
 .header__container {
-  padding: 25px 25px 23px 25px;
+  padding-block: 25px 23px;
   background-color: var(--main-color);
   font-family: var(--acent-font);
   text-align: center;
@@ -24,13 +24,13 @@
 
 .main-title {
   display: inline-block;
-  margin-block-start: 111px;
+  margin-block-start: 104px;
   font-size: var(--main-title-size);
   text-decoration: none;
 }
 
 .title {
-  margin-block-start: 20px;
+  margin-block-start: 12px;
   font-size: var(--title-size);
   text-transform: uppercase;
 }
@@ -43,7 +43,7 @@
 .theme-menu {
   display: flex;
   justify-content: center;
-  margin-block-start: 25px;
+  margin-block-start: 20px;
   margin-inline-start: 18px;
   font-size: 14px;
 }
@@ -51,7 +51,7 @@
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 9px;
 }
 
 .theme-menu__item {
@@ -80,7 +80,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 54px;
+  gap: 50.5px;
   margin: 100px auto 0 auto;
   max-inline-size: 700px;
 }
@@ -93,19 +93,21 @@
 .card__title {
   font-variation-settings: var(--title-font-stngs);
   font-size: 18px;
-  margin-block: 4px;
+  margin-block-start: 5px;
+  margin-block-end: 7.5px;
   margin-inline-start: 10.5px;
-  word-spacing: -1.1px;
+  /* word-spacing: -1.1px; */
 }
 
 .card__image-container {
+  margin: 0;
   position: relative;
   outline: 2px solid var(--acent-color);
 }
 
 .card__label {
   position: absolute;
-  inset-block-start: 27px;
+  inset-block-start: 23px;
   inset-inline-end: 25px;
   z-index: 1;
   font-family: var(--acent-font);
@@ -121,6 +123,7 @@
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
+  aspect-ratio: 1 / 1;
 }
 
 .card__image_art {
@@ -156,7 +159,7 @@
 }
 
 .card__description-container {
-  padding: 25px 25px 0;
+  padding: 27px 25px 0;
 }
 
 .card__description {
@@ -165,7 +168,7 @@
 }
 
 .card__description:last-child {
-  margin-block-start: 27px;
+  margin-block-start: 26px;
 }
 
 .card__button-container {
@@ -181,7 +184,12 @@
 }
 
 .card__like-button {
-  padding-inline: 35px;
+  max-inline-size: 130px;
+  inline-size: 100%;
+}
+
+.card__like-button:focus {
+  outline: none;
 }
 
 .card__icon-button {
@@ -189,12 +197,25 @@
 }
 
 @supports (text-stroke: 1px var(--main-color)) or (-webkit-text-stroke: 1px var(--main-color)) {
-  
+
   .card__label {
     -webkit-text-stroke: 1px var(--main-color);
     text-stroke: 1px var(--main-color);
     text-shadow: none;
   }
+}
+
+.card__description-container {
+  padding: 28px 25px 0;
+}
+
+.card__button-container {
+  padding: 24px 25px 25px 25px;
+}
+
+.like-icon {
+  inline-size: 39px;
+  block-size: 36px;
 }
 
 .button {
@@ -213,8 +234,12 @@
   mix-blend-mode: difference;
 }
 
+.button__text_uppercase {
+  text-transform: uppercase;
+}
+
 .footer {
-  margin: 49px auto 105px auto;
+  margin: 50px auto 105px auto;
   max-inline-size: 335px;
 }
 
@@ -234,7 +259,7 @@
 }
 
 .save-button {
-  padding: 11px 16px 16px 14px;
+  padding: 11px 16px 17px 14px;
   text-align: center;
 }
 
@@ -245,7 +270,7 @@
 
 .dialog {
   border: 2px solid var(--acent-color);
-  padding: 31.5px 31.5px 30px 31.5px;
+  padding: 30px;
   min-inline-size: 360px;
   max-block-size: 195px;
   background-color: var(--main-color);
@@ -270,6 +295,7 @@
 
 .dialog__description {
   font-family: var(--acent-font);
+  line-height: 21px;
   font-size: 14px;
   text-transform: uppercase;
   color: var(--acent-color);
@@ -290,12 +316,36 @@
 
 @media (width <= 375px) {
 
+  .header__container {
+    padding-block: 17px 23px;
+  }
+
   .main-title {
-    --main-title-size: clamp(2.0625rem, -1.9375rem + 20vw, 2.75rem);
+    margin-block-start: 103px;
+    font-size: var(--main-title-mobile-size);
+  }
+
+  .title {
+    margin-block-start: 18px;
+    font-size: var(--title-mobile-size)
+  }
+
+  .theme-menu {
+    margin-block-start: 20px;
+    margin-inline-start: 23px;
+  }
+
+  .card__title {
+    max-inline-size: 320px;
+  }
+
+  .card__label {
+    inset-block-start: 21px;
+    inset-inline-end: 10px;
   }
 
   .footer {
-    margin: 49px auto 102px auto;
+    margin: 51px auto 102px auto;
     max-inline-size: 306px;
   }
 

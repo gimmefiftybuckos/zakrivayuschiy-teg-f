@@ -80,8 +80,8 @@
 }
 
 .card__icon-button {
-  width: 39px;
-  height: 36px;
+  inline-size: 39px;
+  block-size: 36px;
   padding: 0;
 }
 
@@ -110,8 +110,8 @@
   position: absolute;
   inset-block-end: 0;
   inset-inline-start: 0;
-  height: 100%;
-  width: 100%;
+  block-size: 100%;
+  inline-size: 100%;
   background-color: var(--acent-color);
   transform-origin: 0 0;
   transition: ease 0.3s;
