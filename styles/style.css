@@ -96,7 +96,6 @@
   margin-block-start: 5px;
   margin-block-end: 7.5px;
   margin-inline-start: 10.5px;
-  /* word-spacing: -1.1px; */
 }
 
 .card__image-container {
@@ -156,10 +155,6 @@
 
 .card__image_sepia {
   filter: sepia(0.25) var(--img-filter);
-}
-
-.card__description-container {
-  padding: 27px 25px 0;
 }
 
 .card__description {
