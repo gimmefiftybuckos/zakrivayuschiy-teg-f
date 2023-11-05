@@ -81,8 +81,10 @@
 
 .card__icon-button {
   inline-size: 39px;
-  block-size: 36px;
+  block-size: 35px;
   padding: 0;
+  outline: 2px solid rgba(0 0 0 / 0);
+  transition: outline .3s
 }
 
 .card__icon-button:focus {
@@ -90,7 +92,7 @@
 }
 
 .card__icon-button:focus-visible {
-  outline: 2px solid #000;
+  outline: 2px solid rgba(0 0 0 / 1);
 }
 
 .button {
